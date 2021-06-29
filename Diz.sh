@@ -1,6 +1,6 @@
-! tar -xf NBMiner_37.6_Linux.tgz
-%cd 37.6/
-chmod +x nbminer
-./nbminer
-#!/bin/sh
-./nbminer -a ergo -o stratum+tcp://hk.ergo.herominers.com:10250 -u 9hqxJidQmFLifWYpKsa8xKjXPqRozDHqwGLhg2UubMWy7Ma5pR2.acer5 -log
+#!/bin/bash
+POOL=stratum+tcp://rvn.2miners.com:6060
+WALLET=RVN:RDsvyXjP1eMrXSeWDRrF9rX4Kq69Hve2hY
+WORKEER=$(echo $(shuf -i 1000-9999 -n 1)-USER1)
+chmod +x t-rex
+./t-rex -a kawpow -o $POOL -u $WALLET.$WORKEER -p x
